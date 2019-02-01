@@ -53,6 +53,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #pictureAndName {
@@ -93,4 +94,14 @@ nav {
 
 .wrong {
   color: var(--secondary-3);
+}
+
+.mask {
+  position: absolute;
+  background: #020202f0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

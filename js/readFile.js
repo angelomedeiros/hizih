@@ -78,15 +78,21 @@ document.addEventListener("keypress", event => {
   }
 });
 
-let counter = 0;
+const elementMask = document.querySelector(".mask");
 
-const timerBlink = setInterval(() => {
-  try {
-    elementsChar[charActive].classList.toggle("blink");
-    counter += 500;
-  } catch (e) {
-    let speed = Math.floor(totalCharacters / (counter / 60000));
-    elementSpeed.innerText = speed;
-    clearInterval(timerBlink);
-  }
-}, 500);
+elementMask.addEventListener("click", function() {
+  this.style.display = "none";
+
+  let counter = 0;
+
+  const timerBlink = setInterval(() => {
+    try {
+      elementsChar[charActive].classList.toggle("blink");
+      counter += 500;
+    } catch (e) {
+      let speed = Math.floor(totalCharacters / (counter / 60000));
+      elementSpeed.innerText = speed;
+      clearInterval(timerBlink);
+    }
+  }, 500);
+});

@@ -16,6 +16,7 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <nav>
@@ -46,12 +47,12 @@
             <strong>Incorrectly pressed characters:</strong>
             <span id="pressedIncorrectly">0</span>
           </p>
-          <p>
+          <!-- <p>
             <strong
               ><del>Character pressed incorrectly more times:</del></strong
             >
             <span id="pressedIncorrectlyMoreTimes"><del>0</del></span>
-          </p>
+          </p> -->
         </div>
         <div>
           <p>
@@ -62,6 +63,7 @@
       </div>
       <div id="code">
         <div id="lines"></div>
+        <div class="mask">Click to activated</div>
       </div>
     </main>
     <script src="./js/readFile.js"></script>
