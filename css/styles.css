@@ -1,0 +1,96 @@
+@import url("./reset.css");
+@import url("./grid.css");
+@import url("./variables.css");
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "nav main";
+  grid-template-columns: 200px 1fr;
+  font-family: "Nunito";
+  color: var(--color-font);
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  grid-area: nav;
+  background: var(--primary);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#stats {
+  width: 100%;
+  background: var(--primary);
+  border-left: 1.5px solid #2d2a27;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#stats div:nth-child(2) {
+  font-size: 2rem;
+}
+
+#code {
+  width: 100%;
+  background: #2d2a27;
+  flex-grow: 10;
+  color: white;
+  font-family: "Roboto mono";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pictureAndName {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pictureAndName h4 {
+  margin-top: 10px;
+}
+
+#profileAndTopSpeeds {
+  height: 10vh;
+}
+
+#profileAndTopSpeeds > p > i {
+  margin-right: 10px;
+}
+
+#socialNetwork {
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.spaceOrNewLine {
+  color: #5d5656;
+}
+
+.blink {
+  color: black;
+  background: white;
+}
+
+.wrong {
+  color: var(--secondary-3);
+}

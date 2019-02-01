@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hizih - Typing practice with codes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="pictureAndName">
+        <img src="./assets/profile.png" alt="profile" width="30%" />
+        <h4>Anonymous</h4>
+      </div>
+      <div id="profileAndTopSpeeds">
+        <p><i class="fas fa-user-circle"></i>Profile</p>
+        <p><i class="fas fa-trophy"></i>Top Speeds</p>
+      </div>
+      <div id="socialNetwork">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-gitlab"></i>
+      </div>
+    </nav>
+    <main>
+      <div
+        id="stats"
+        class="d-flex flex-direction-row justify-content-center align-items-center"
+      >
+        <div>
+          <p><strong>Total of characters:</strong> <span id="total">0</span></p>
+          <p>
+            <strong>Characters pressed:</strong> <span id="pressed">0</span>
+          </p>
+          <p>
+            <strong>Incorrectly pressed characters:</strong>
+            <span id="pressedIncorrectly">0</span>
+          </p>
+          <p>
+            <strong
+              ><del>Character pressed incorrectly more times:</del></strong
+            >
+            <span id="pressedIncorrectlyMoreTimes"><del>0</del></span>
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Speed:</strong>
+            <span id="speed">0</span> char/min
+          </p>
+        </div>
+      </div>
+      <div id="code">
+        <div id="lines"></div>
+      </div>
+    </main>
+    <script src="./js/readFile.js"></script>
+  </body>
+</html>
